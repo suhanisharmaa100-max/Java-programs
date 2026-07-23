@@ -1,28 +1,29 @@
-// Question 5: Type Casting
+// Question 2: Circle Calculator
 
-// Take a double from the user.
+// Take the radius from the user.
 
-// Convert it into an int.
+// Declare:
 
-// Example
+// final double PI = 3.14159;
 
-// Enter price: 199.99
+// Print:
 
-// Integer Value = 199
-
-
-package day09javaBasics;
+// Area
+// Circumference
+package day10javaBasics;
 
 import java.util.Scanner;
 
 public class q5 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("enter price: ");
-        double price = input.nextDouble();
-
-        System.out.println("intger value: " + ((int) price));
-        input.close();
+        
+    
+    final double PI = 3.14159;
+    Scanner input = new Scanner(System.in);
+    System.out.print("enter circle's radius:");
+    int r = input.nextInt();
+    System.out.println("Area Of Circle:" + (PI*r*r));
+    System.out.println("circumference of circle:" + (2*PI*r));
+    input.close();
     }
 }

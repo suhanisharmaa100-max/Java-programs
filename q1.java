@@ -1,32 +1,29 @@
-// Question 1: Student Details
+// Question 1
 
-// Create a program that:
+// Create the following 2D array:
 
-// Stores your name, age, and CGPA.
-// Declares a constant COLLEGE.
-// Prints all the details.
+// int[][] numbers = {
+//     {10, 20},
+//     {30, 40}
+// };
 
-// Expected Output
+// Print:
 
-// Name: Suhani
-// Age: 21
-// CGPA: 8.5
-// College: ABC University
+// 10
+// 40
+package day10javaBasics;
 
-
-package day09javaBasics;
+import java.util.Arrays;
 
 public class q1 {
     public static void main(String[] args) {
-        String name = "Suhani";
-        int age = 21;
-        float CGPA = 8.5F;
-        final String COLLEGE = "ABC university";
-        System.out.println("Name: " + name);
-        System.out.println("AGE: " + age);
-        System.out.println("CGPA: " + CGPA);
-        System.out.println("College: " + COLLEGE);
+        int [] []  numbers = {
+            {10,20},
+            {30,40}
+        };
+        System.out.println(Arrays.deepToString(numbers));
+        System.out.println("first number:" + numbers [0][0]);
+        System.out.println("first number:" + numbers [1][1]);
+        
     }
-     
-
 }

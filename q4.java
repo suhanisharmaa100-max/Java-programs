@@ -1,36 +1,36 @@
-// Question 4: Logical Operators
+// Question 1: Student Information
 
-// Take:
+// Take input from the user:
 
+// Name
 // Age
-// Whether the user has an ID (true/false)
+// CGPA
 
-// Print:
+// Declare a constant COLLEGE.
 
-// Eligible = true
-
-// Condition:
-
-// Age >= 18 AND hasID == true
-
-
-package day09javaBasics;
+// Print all the details.
+package day10javaBasics;
 
 import java.util.Scanner;
 
 public class q4 {
     public static void main(String[] args) {
+        final String COLLEGE = "Abc" ;
         Scanner input = new Scanner(System.in);
+        System.out.print("enter your name:" );
+        String name = input.nextLine();
 
         System.out.print("enter your age: ");
-        int age = input.nextInt();
+        int AGE = input.nextInt();
 
-        System.out.print("hasID: (true/false) ");
-        boolean hasID = input.nextBoolean();
+        System.out.print("enter your CGPA:");
+        Double CGPA = input.nextDouble();
 
-        System.out.println("eligible : " + (age >= 18 && hasID == true));
-        //or 
-        System.out.println("eligible : " + (age >= 18 && hasID));// both have same meaning
+
+        System.out.println("details of " + name + " the student of " + COLLEGE + ":"); 
+
+        System.out.println("Age: " + AGE);
+        System.out.println("CGPA: " + CGPA);
         input.close();
     }
 }

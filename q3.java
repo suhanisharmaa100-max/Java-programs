@@ -1,49 +1,28 @@
-// Question 3: Comparison Checker
+// Question 3
 
-// Take two integers from the user.
+// Create the following 2D array:
 
-// Print the result of:
+// String[][] names = {
+//     {"Suhani", "Ayush"},
+//     {"Riya", "Rahul"}
+// };
 
-// ==
-// !=
-// >
-// <
-// >=
-// <=
+// Print:
 
-// Example
+// Suhani
+// Rahul
+package day10javaBasics;
 
-// Enter first number: 10
-// Enter second number: 20
-
-// Equal: false
-// Not Equal: true
-// Greater: false
-// Less: true
-// Greater or Equal: false
-// Less or Equal: true
-
-package day09javaBasics;
-
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class q3 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter First Number: ");
-        int a = input.nextInt();
-
-        System.out.print("Enter Second Number: ");
-        int b = input.nextInt();
-
-        System.out.println("EQUAL:" + (a == b));
-        System.out.println("NOT EQUAL:" + (a != b));
-        System.out.println("GREATER:" + (a > b));
-        System.out.println("LESS:" + (a < b));
-        System.out.println("GREATER OR EQUAL:" + (a >= b));
-        System.out.println("LESS OR EQUAL:" + (a <= b));
-        input.close();
-
+            String [] [] name  = {
+            {"Suhani", "Ayush"},
+            {"Riya","Rahul"}
+        };
+        System.out.println("names of students: " + Arrays.deepToString(name));
+        System.out.println(name[0][0]);
+        System.out.println(name[1][1]);
     }
 }

@@ -1,48 +1,30 @@
-// Question 2: Calculator
+// Question 2
 
-// Take two integers from the user.
+// Create the following 2D array:
+
+// int[][] marks = {
+//     {80, 75, 90},
+//     {65, 70, 85}
+// };
 
 // Print:
 
-// Sum
-// Difference
-// Product
-// Quotient
-// Remainder
+// 75
+// 65
+// 90
+package day10javaBasics;
 
-// Example
-
-// Enter first number: 20
-// Enter second number: 5
-
-// Sum = 25
-// Difference = 15
-// Product = 100
-// Quotient = 4
-// Remainder = 0
-
-
-package day09javaBasics;
-
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class q2 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Enter First Number:");
-        int a = input.nextInt();
-
-        System.out.print("Enter Second Number:");
-        int b = input.nextInt();
-
-        System.out.println("sum = " + (a + b));
-        System.out.println("Difference = " + (a - b));
-        System.out.println("Product = " + (a * b));
-        System.out.println("Quotient = " + (a / b));
-        System.out.println("Remainder = " + (a % b));
-        input.close();
-
+        int [] [] number = {
+            {80, 75, 90},
+            {65, 70, 85}
+        };
+        System.out.println("Given Array:" + Arrays.deepToString(number));
+        System.out.println("frist element:" + number[0][1]);
+        System.out.println("Second element:" + number[1][0]);
+        System.out.println("Third element:" + number[0][2]);
     }
-     
 }

@@ -1,28 +1,33 @@
-// Question 6: Wrapper Class
+// Question 3: Shopping Bill
 
-// Given:
+// Take:
 
-// String age = "21";
-// String salary = "50000.50";
+// Product name
+// Quantity
+// Price per item
 
-// Convert them into:
+// Print:
 
-// int
-// double
+// Total Bill
+package day10javaBasics;
 
-// Then print:
-
-// Age = 21
-// Salary = 50000.5
-
-
-package day09javaBasics;
+import java.util.Scanner;
 
 public class q6 {
     public static void main(String[] args) {
-        String age = "21";
-        String salary = "50000.50";
-        System.out.println("Age : " + (Integer.parseInt(age)));
-        System.out.println("Salary : " + (Double.parseDouble(salary)));
+        
+    
+    Scanner input = new Scanner (System.in);
+    System.out.print("enter product name:");
+    String name = input.nextLine();
+
+    System.out.print("Quantity:");
+    int num = input.nextInt();
+
+    System.out.print("Price per item:");
+    double price = input.nextDouble();
+
+    System.out.println("total bill of "+ name + ":"  + (num * price));
+    input.close();
     }
 }
